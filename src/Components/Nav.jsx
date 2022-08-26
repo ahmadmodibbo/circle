@@ -7,7 +7,7 @@ export default function Nav() {
     
   return (
     <nav className='bg-black py-2 px-2 lg:px-8 text-white flex items-center justify-between'>
-        <img className='h-10' src="/images/logo.png" alt="" />
+        <img className='h-10' src="/images/Logo.png" alt="" />
         <ul className='hidden lg:flex items-center gap-16 '>
            <NavLinks/>
         </ul>
