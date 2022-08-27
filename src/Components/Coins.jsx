@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function Coins() {
     const [coins, setCoins]=useState(null)
-    const url ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn&order=market_cap_desc&per_page=150&page=1&sparkline=false";
+    const url ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn&order=market_cap_desc&per_page=140&page=1&sparkline=false";
 
     useEffect(()=>{
         axios.get(url)
@@ -20,7 +20,7 @@ export default function Coins() {
     <>
         {
           coins.map((coin,i)=>(
-            <div className='w-[297px] h-[160px] shadow-lg shadow-[#73FDAA] flex flex-col justify-between p-3 ' key={i}>
+            <div className='w-[297px] h-[160px] shadow shadow-[#73FDAA] flex flex-col justify-between p-3 ' key={i}>
                 <div className='flex justify-between items-center px-2 py-4'>
                     <div className='flex items-center gap-3'>
                         <img className='h-[40px] w-[40px] object-cover ' src={`/icons/coins/${coin.symbol}.svg`} alt={coin.symbol} />
