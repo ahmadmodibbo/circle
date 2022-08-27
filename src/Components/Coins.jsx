@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useEffect } from 'react';
 
 export default function Coins() {
-    const [pop, setPop]=useState(true)
     const [coins, setCoins]=useState(null)
     const url ="https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn&order=market_cap_desc&per_page=150&page=1&sparkline=false";
 
