@@ -10,9 +10,6 @@ export default function MarketTrend() {
         <div className='flex flex-col md:flex-row flex-wrap gap-6 items-center justify-center'>
             <Market/>
         </div>
-        <div className='text-white flex justify-end  mt-8 px-4'>
-          <a className='flex text-2xl font-Montserrat items-center gap-3 hover:text-primary hover:scale-x-110' href="/coinsList"><h1 className=''>Load More Coins</h1><ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
-        </div>
     </div>
   )
 }
